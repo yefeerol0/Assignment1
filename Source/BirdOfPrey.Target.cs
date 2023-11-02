@@ -8,8 +8,9 @@ public class BirdOfPreyTarget : TargetRules
 	public BirdOfPreyTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V4;
+		DefaultBuildSettings = BuildSettingsVersion.V3;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_2;
 
-		ExtraModuleNames.AddRange( new string[] { "BirdOfPrey" } );
+        ExtraModuleNames.AddRange( new string[] { "BirdOfPrey" } );
 	}
 }
